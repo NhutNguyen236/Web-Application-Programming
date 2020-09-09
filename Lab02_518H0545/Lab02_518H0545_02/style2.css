@@ -1,0 +1,53 @@
+#banner{
+	display: block;
+	margin-right: auto; 
+	margin-left: auto;
+	background-color: #3333cc;
+}
+
+/*Lich trinh cac chuyen bay*/
+h2{
+	text-align: center;
+	text-transform: uppercase;
+	color: #b38f00;
+}
+
+/*Table Edit*/
+table{
+	width: 100%; 
+	text-align: center;
+	border-collapse: collapse;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	/*border:"1"; 
+	cellpadding =5; 
+	cellspacing="5";
+	align = center;*/
+}
+
+.row1{
+	color: white; 
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #0066ff;
+}
+
+.row2{
+	color: #ff9900; 
+	font-weight: bold;
+	text-transform: capitalize;
+	background: #ccf2ff;
+}
+
+.city{
+	text-align: left;
+	color: #009999;
+}
+
+td:hover{
+	background-color: #99ccff;
+}
+
+tr:hover{
+	background-color: #8080ff;
+}

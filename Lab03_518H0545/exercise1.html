@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<script language = "javascript">
+	function validateInfor(){
+		let emailField = document.getElementById('email');
+		let passwordField = document.getElementById('pwd'); 
+		let errorEmail = document.getElementById('alert-email'); 
+		let errorPass = document.getElementById('alert-pass'); 
+		
+		let email = emailField.value; 
+		let password = passwordField.value;
+		
+		//when both pass and email is empty
+		if(email === "" && password === ""){
+			errorEmail.innerHTML = "Please enter your email";
+			errorPass.innerHTML = "Please enter your password";
+			return false;
+		}
+		//when email is empty
+		if(email === ""){
+			errorEmail.innerHTML = "Please enter your email";
+			emailField.focus();
+			return false;
+		}
+		//when password is empty
+		else if(password === ""){
+			errorPass.innerHTML = "Please enter your password";
+			passwordField.focus();
+			return false;
+		}
+		//when email does not have @
+		else if(!email.includes("@")){
+			errorEmail.innerHTML = "Your email is not correct";
+			return false;
+		}
+		else if(password.length < 6){
+			errorPass.innerHTML = "Your password must contain at least 6 characters";
+			return false;
+		}
+		return true;
+	}
+	function clearEmailAlert(){
+		let errorMessage = document.getElementById('alert-email').innerHTML = "";
+	}
+	function clearPassAlert(){
+		let errorMessage = document.getElementById('alert-pass').innerHTML = "";
+	}
+</script>
+
+<style>
+    form{
+        max-width: 400px;
+        margin: auto;
+    }
+	#alert-email{
+		color: red;
+		font-size:18px;
+	}
+	#alert-pass{
+		color: red;
+		font-size:18px;
+	}
+</style>
+
+<div class="container">
+
+    <form action="/action_page.php" >
+        <h2>Login</h2>
+		<!--Email-->
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" onclick = "clearEmailAlert()">
+			<p id = "alert-email"></p>
+        </div>
+		
+		<!--Password-->
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" onclick = "clearPassAlert()">
+			<p id = "alert-pass"></p>
+        </div>
+        <button type="submit" class="btn btn-default" onclick = "return validateInfor()">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

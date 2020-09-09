@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab02_518H0545_03</title>
+</head>
+<body>
+
+<style>
+	#banner{
+		border: 1px solid black;	
+		background-color: #ac7339;
+		height: 90px;
+	}
+	
+	#menu{
+		border: 1px solid black;	
+		margin-top: 0px;
+		background: #0066ff;
+		height: 60px;
+	}
+	
+	#left{
+		border: 1px solid black;
+		width: 25%;
+		height: 800px;
+		background: pink;
+		left: 0;
+		float: left;
+	}
+	
+	#left : before{
+		left: 0;
+	}
+	
+	#center{
+		border: 1px solid black;
+		width: 34%;
+		height: 800px;
+		background: #ffbf00;
+		float: left;
+	}
+	
+	#mid:before  {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+		left:20%;
+	}
+	
+	#right{
+		border: 1px solid black;
+		width: 40.51%;
+		height: 800px;
+		background: #88ff4d;
+		float: left;
+	}
+	
+	#right: before{
+		left: 70%;
+	}
+	
+	#footer{
+		background:#A8A8A8;
+		clear:both;
+		height:50px;
+	}
+</style>
+
+<div id="banner">
+	<p>banner</p>
+</div>
+
+<div id="menu">
+	<p>menu</p>
+</div>
+
+<div id="content">
+    <div id="left">
+		<p>left</p>
+	</div>
+	
+    <div id="center">
+		<p>center</p>
+	</div>
+	
+    <div id="right">
+		<p>right</p>
+	</div>
+</div>
+
+<div id="footer">
+	<p>footer</p>
+</div>
+
+
+</body>
+</html>
