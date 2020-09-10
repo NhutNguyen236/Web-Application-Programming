@@ -63,21 +63,45 @@ function clearLastNameAlert(){
 }
 
 function InsertValue(){
-	let table = document.getElementById("table");
-	let row = table.insertRow();
-	let cell1 = row.insertCell(0);
-	let cell2= row.insertCell(1);
-	let cell3 = row.insertCell(2);
-	//let cell4 = row.insertCell(3);
-	
 	if(checkValidate() == true){
-		cell1.innerHTML = firstName;
-		cell2.innerHTML = lastName;
-		cell3.innerHTML = Email;
-		return true;
+		let firstname_id = document.getElementById('firstname');
+		let lastname_id = document.getElementById('lastname');
+		let email_id = document.getElementById('email');
+		
+		let firstName = firstname_id.value;
+		let lastName = lastname_id.value;
+		let Email = email_id.value;
+
+		//row_define
+		let tr = document.createElement('tr');
+		let td1 = document.createElement('td');
+		let td2 = document.createElement('td');
+		let td3 = document.createElement('td');
+		let td4 = document.createElement('td');
+
+		td1.innerHTML = firstName;
+		td2.innerHTML = lastName;
+		td3.innerHTML = Email;
+		td4.innerHTML = '<button>Delete</button>';
+
+		tr.appendChild(td1);
+		tr.appendChild(td2);
+		tr.appendChild(td3);
+		tr.appendChild(td4);
+
+		let tbody = document.getElementById('tbody');
+		tbody.appendChild(tr);
 	}
+
 	else{
 		alert("Not good");
 		return false;
 	}
 }
+
+window.addEventListener('keyup',function(e){
+	if(e.keyCode === 13){
+		InsertValue();
+	}
+});
+
