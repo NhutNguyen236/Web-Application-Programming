@@ -91,6 +91,9 @@ function InsertValue(){
 
 		let tbody = document.getElementById('tbody');
 		tbody.appendChild(tr);
+		
+		//reset form after clicking ADD
+		document.getElementById("form").reset();
 	}
 
 	else{
