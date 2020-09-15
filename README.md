@@ -1,2 +1,2 @@
-## Laboratories for my subject Web_Program_Application, 3rd year in College. 
+## Laboratories for my subject Web_Program_Application
 Marked ... *Still in updating process*
