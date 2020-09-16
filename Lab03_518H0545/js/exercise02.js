@@ -82,7 +82,7 @@ function InsertValue(){
 		td1.innerHTML = firstName;
 		td2.innerHTML = lastName;
 		td3.innerHTML = Email;
-		td4.innerHTML = '<button>Delete</button>';
+		td4.innerHTML = '<button onclick = "removeRow(this)">Delete</button>';
 
 		tr.appendChild(td1);
 		tr.appendChild(td2);
@@ -100,6 +100,14 @@ function InsertValue(){
 		alert("Not good");
 		return false;
 	}
+}
+
+function removeRow(button){
+	let but = button.parentNode;
+	let tr = but.parentNode;
+	let tbody = tr.parentNode;
+	
+	tbody.removeChild(tr);
 }
 
 window.addEventListener('keyup',function(e){
