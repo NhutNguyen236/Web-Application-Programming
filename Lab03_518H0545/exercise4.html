@@ -20,8 +20,8 @@
     }
 </style>
 
-
-<select id="imageList" name="imageList" size="10">
+<!--Dropdown list for image label-->
+<select id="imageList" name="imageList" size="10" onchange = "selectImage()">
     <option value="pic_001.jpg">pic_001.jpg</option>
     <option value="pic_002.jpg">pic_002.jpg</option>
     <option value="pic_003.jpg">pic_003.jpg</option>
@@ -33,10 +33,12 @@
     <option value="pic_009.jpg">pic_009.jpg</option>
     <option value="pic_010.jpg">pic_010.jpg</option>
 </select>
-<img src="images/pic_001.jpg">
-<button type="button" >Back</button>
-<button type="button" >Start slideshow</button>
-<button  type="button">Next</button>
-<p >pic_001.jpg (10/55)</p>
+
+<img id = "image" src="images/pic_001.jpg">
+<button type="button" onclick = "backImage()" id = "backButton">Back</button>
+<button type="button" onclick = "slideShow()">Start slideshow</button>
+<button  type="button" onclick = "nextImage()" id = "nextButton">Next</button>
+<p id = "imageLabel"><i>None is selected</i></p>
 </body>
+<script src = "./js/exercise04.js"></script>
 </html>
