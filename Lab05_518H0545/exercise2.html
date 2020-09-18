@@ -1,0 +1,124 @@
+<!--This is stil exercise 01 from lab 03 but written in Jquery-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<script>
+	
+	function validateInfor(){
+	
+		let emailValue = $("#email").val();
+		let passwordValue = $("#pwd").val();
+		
+		//when both pass and email is empty
+		if(emailValue === "" && passwordValue === ""){
+			$("#alert-email").html("Please enter your email");
+			$("#alert-pass").html("Please enter your password");
+			$("#email").focus();
+		}
+		
+		//when email is empty
+		else if(emailValue === ""){
+			$("#alert-email").html("Your email cannot be left empty");
+			$("#email").focus();
+		}
+		//when password is empty
+		else if(passwordValue === ""){
+			$("#alert-pass").html("Please enter your password");
+			$("#pwd").focus();
+		}
+		//when email does not have @
+		else if(!emailValue.includes("@")){
+			$("#alert-pass").html("Your email is incorrect");
+			$("#email").focus();
+		}
+		else if(passwordValue.length < 6){
+			$("#alert-pass").html("Your password must contain at least 6 characters");
+			$("#pwd").focus();
+		}
+
+	}
+	
+	function clearEmailAlert(){
+		let errorEmailMessage = $("#alert-email").html("");
+	}
+	function clearPassAlert(){
+		let errorPasswordMessage = $("#alert-pass").html("");
+	}
+	
+	$(document).ready(function(){
+		
+		$("#submit-button").click(function(){
+		
+			validateInfor();
+			
+		});
+		
+		//For click on Email input 
+		$("#email").click(function(){
+		
+			clearEmailAlert();
+			
+		});
+		
+		//For click on Password input 
+		$("#pwd").click(function(){
+		
+			clearPassAlert();
+			
+		});
+	});
+
+</script>
+
+<style>
+    form{
+        max-width: 400px;
+        margin: auto;
+    }
+	#alert-email{
+		color: red;
+		font-size:18px;
+	}
+	#alert-pass{
+		color: red;
+		font-size:18px;
+	}
+</style>
+
+<div class="container">
+
+    <form action="/action_page.php" >
+        <h2>Login</h2>
+		<!--Email-->
+        <div class="form-group">
+		
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+			
+			<p id = "alert-email"></p>
+        </div>
+		
+		<!--Password-->
+        <div class="form-group">
+		
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+			
+			<p id = "alert-pass"></p>
+        </div>
+        <button type="button" class="btn btn-default" id = "submit-button">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
