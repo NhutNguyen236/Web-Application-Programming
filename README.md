@@ -4,4 +4,4 @@
 
 *Still in updating process*
 
-![Alt Text](https://freefrontend.com/assets/img/css-progress-bars/Loading-Bar.gif)
+![Alt Text](https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif)
