@@ -4,4 +4,4 @@
 
 *Still in updating process*
 
-![Alt Text](https://media.tenor.com/images/8d0e83860667fe684da6a4564f0fe3bd/tenor.gif)
+![Alt Text](https://freefrontend.com/assets/img/css-progress-bars/Loading-Bar.gif)
