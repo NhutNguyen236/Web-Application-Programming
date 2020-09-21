@@ -4,4 +4,4 @@
 
 *Still in updating process*
 
-![Alt Text](https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif =250x250)
+![](https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif =250x250)
