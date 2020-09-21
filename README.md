@@ -4,4 +4,4 @@
 
 *Still in updating process*
 
-<img style = "text-align: center" src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
+<img style = "margin: auto;" src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
