@@ -4,4 +4,4 @@
 
 *Still in updating process*
 
-![](https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif =250x250)
+<img src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
