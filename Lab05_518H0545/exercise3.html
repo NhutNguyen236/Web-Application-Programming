@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise03</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<script> 
+
+	$(document).ready(function(){
+	
+		$('.image img').click(function(){
+			
+			var angle = (($(this).data('angle') || 0) + 90) % 360;
+			
+			$(this).css('transform','rotate('+ angle + 'deg)');
+			$(this).data('angle',angle);
+		});
+		
+	});
+	
+	//Drag and drop API
+	function drag(event){
+		event.dataTransfer.setData("text", event.target.id);
+	}
+	
+	function drop(event){
+		event.preventDefault();
+		var data = event.dataTransfer.getData("text");
+		event.target.appendChild(document.getElementById(data));
+	}
+	
+	function allowDrop(event) {
+		event.preventDefault();
+	}
+	
+</script>
+
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	
+	h1{
+		color: red;
+	}
+	
+	h1:hover{
+		color: green;
+	}
+	
+	body{
+		text-align: center;
+	}
+	
+	/*For puzzle grids*/
+	#grid{
+		width: 450px;
+		height: 450px;
+		margin: 80px auto;
+	}
+	
+	#place{
+		width: 150px;
+		height: 150px;
+		border: 1px solid gray;
+		float: left;
+	}
+	
+	#place:hover{
+		background-color: #346869;
+	}
+	
+	/*For pictures grids*/
+	#pictures{
+		width: 750px;
+		height: 750px;
+		margin: 80px auto;
+	}
+	
+	.image{
+		width: 150px;
+		height: 150px;
+		border: 1px solid black;
+		float: left;
+	}
+
+	.image img{
+		max-width: 100%;
+		opacity: 1;
+	}
+	
+	.image:hover img{
+		opacity: 0.5;
+	} 
+	
+	/*Change max-width when place got its child as a picture*/
+	#place img{
+		max-width: 100%;
+	}
+</style>
+
+<body>
+
+	<h1 id = "heading"> Puzzle game Exercise03 </h1>
+	
+	<!--Making of puzzle grids-->
+	<div id = "grid"> 
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+		<div id = "place" ondrop = "drop(event)" ondragover = "allowDrop(event)"></div>
+	</div>
+	
+	<!--Display images place-->
+	<div id = "pictures"> 
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_01.gif" id = 'image1' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_02.gif" id = 'image2' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_03.gif" id = 'image3' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_04.gif" id = 'image4' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_05.gif" id = 'image5' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_06.gif" id = 'image6' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_07.gif" id = 'image7' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_08.gif" id = 'image8' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_09.gif" id = 'image9' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		<div class = "image" ondrop = "drop(event)" ondragover = "allowDrop(event)">
+			<img src = "./images/cntt_10.gif" id = 'image10' draggable = "true" ondragstart = "drag(event)">
+		</div>
+		
+	</div>
+</body>
+
+</html>
