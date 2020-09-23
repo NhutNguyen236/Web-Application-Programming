@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercise04</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<style> 
+	*{
+		box-sizing: border-box;
+	}
+	
+	.main-form{
+		margin-top: 50px;
+	}
+	
+	#view{
+		background-color: lavenderblush;
+	}
+	
+	h1{
+		color: red;
+		font-size: 40px;
+	}
+	
+	#insertion{
+		border-radius: 3.5px;
+		border: 1.8px solid gray;
+	}
+	
+	#update-button{ 
+		background-color: green;
+		margin-left: 20px;
+	}
+	
+	#view{
+		border-radius: 3.5px;
+		border: 1.8px solid gray;
+		background-color: white;
+	}
+</style>
+
+<script> 
+	
+</script>
+
+<body>
+	<h1> 
+		jQuery
+	</h1>
+	
+	<p> 
+		This is just a layout but after that, we will put DB in here
+		<br>
+		Stay tune and be safe, we will come back soon... 
+	</p>
+	
+	<div class = "main-form"> 
+	
+		<!--Information insertion area-->
+		<div class = "col-sm-5" id = "insertion">
+		
+			<div class="form-group">
+				<!--Name input--->
+				<div class = "col-sm-2" id = "name-label">
+					<label for="name">Name:</label>
+				</div>
+				<div class = "col-sm-10" id = "name-input"> 
+					<input type="text" class="form-control" id="name" placeholder="Enter name" name="name" onclick = "clearNameAlert()">
+					<p id = "alert_firstname" class = "error_message"></p>
+				</div>
+				
+				<!--Email input-->
+				<div class = "col-sm-2" id = "email-label">
+					<label for="email">Email:</label>
+				</div>
+				<div class = "col-sm-10" id = "email-input"> 
+					<input type="text" class="form-control" id="email" placeholder="Enter email" name="email" onclick = "clearEmailAlert()">
+					<p id = "alert_email" class = "error_message"></p>
+				</div>
+				
+				<!--Phone input-->
+				<div class = "col-sm-2" id = "phone-label">
+					<label for="phone">Phone:</label>
+				</div>
+				<div class = "col-sm-10" id = "phone-input"> 
+					<input type="text" class="form-control" id="phone" placeholder="Enter phone number" name="phone" onclick = "clearPhoneAlert()">
+					<p id = "alert_phone" class = "error_message"></p>
+				</div>
+				
+				<!--Buttons-->
+				<div class = "text-center"> 
+					<button type="button" class="btn btn-default" onclick = "Add()" id = "add-button">
+						Add
+					</button>
+					<button type="button" class="btn btn-primary" onclick = "Update()" id = "update-button">
+						Update
+					</button>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class = "col-sm-7" id = "view"> 
+			<table class="table">
+			  <thead>
+				<tr>
+				  <th scope="col">ID</th>
+				  <th scope="col">Name</th>
+				  <th scope="col">Email</th>
+				  <th scope="col">Phone</th>
+				  <th scope="col">Action</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				<tr>
+				  <th scope="row">1</th>
+				  <td>Mark</td>
+				  <td>Otto@gmail.com</td>
+				  <td>732-714-8662</td>
+				  <td>Edit | Delete</td>
+				</tr>
+				<tr>
+				  <th scope="row">2</th>
+				  <td>Jacob</td>
+				  <td>Thornton@gmail.com</td>
+				  <td>213-628-2858</td>
+				  <td>Edit | Delete</td>
+				</tr>
+			  </tbody>
+			</table>
+		</div>
+		
+	</div>
+	
+</body>
+
+</html>
