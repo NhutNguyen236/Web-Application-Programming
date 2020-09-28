@@ -77,7 +77,17 @@
 
 <script> 
 	function checkInfor(){
+		let full_name = document.getElementById('full-name');
+		let user_name = document.getElementById('user-name');
+		let errorMess = document.getElementById('error-message');
 		
+		let fullName = full_name.value;
+		let userName = user_name.value;
+		
+		if(fullName === "" && userName === ""){
+			errorMess.innerHTML = "Please enter your full name and Username";
+			full_name.focus();
+		}
 	}
 </script>
 
@@ -137,7 +147,7 @@
 			<tr> 
 				<td></td>
 				<td>
-					<button type="button">Register</button>
+					<button type="button" onclick = "checkInfor()">Register</button>
 					
 					<button type="reset">Reset</button>
 				</td>
