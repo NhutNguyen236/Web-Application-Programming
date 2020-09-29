@@ -59,6 +59,7 @@
 		background-color: #40424d;
 		color: white;
 		padding: 8px 25px 8px 25px;
+		margin-top: 15px;
 	}
 	
 	button:hover{
@@ -79,57 +80,6 @@
 		font-size: 12px;
 	}
 </style>
-
-<script> 
-	function checkInfor(){
-		let full_name = document.getElementById('full-name');
-		let user_name = document.getElementById('user-name');
-		let pass_word = document.getElementById('pass-word');
-		
-		let fullName_error = document.getElementById('fullName-error');
-		let userName_error = document.getElementById('userName-error');
-		let passWord_error = document.getElementById('passWord-error');
-		
-		let fullName = full_name.value;
-		let userName = user_name.value;
-		let passWord = pass_word.value;
-		
-		//If Fullname and username and password are empty
-		if(fullName === "" && userName === "" && passWord === ""){
-			fullName_error.innerHTML = "Full name cannot be empty";
-			userName_error.innerHTML = "Username cannot be empty";
-			passWord_error.innerHTML = "Password cannot be empty";
-			full_name.focus();
-		}
-		
-		else if(fullName === ""){
-			fullName_error.innerHTML = "Full name cannot be empty";
-			full_name.focus();
-		}
-		
-		else if(userName === ""){
-			userName_error.innerHTML = "Username cannot be empty";
-			user_name.focus();
-		}
-		
-		else if(passWord === ""){
-			passWord_error.innerHTML = "Password cannot be empty";
-			pass_word.focus();
-		}
-	}
-	
-	function clearfullName(){
-		let fullName_error = document.getElementById('fullName-error').innerHTML = "";
-	}
-	
-	function clearuserName(){
-		let userName_error = document.getElementById('userName-error').innerHTML = "";
-	}
-	
-	function clearpassWord(){
-		let passWord_error = document.getElementById('passWord-error').innerHTML = "";
-	}
-</script>
 
 <body>
 	<h1>Midterm test revision</h1>
@@ -200,13 +150,8 @@
 			
 			<tr> 
 				<td></td>
-				<td id = "error-message"><p></p></td>
-			</tr>
-			
-			<tr> 
-				<td></td>
 				<td>
-					<button type="button" onclick = "checkInfor()">Register</button>
+					<button type="button" onclick="checkInfor()" id="regis-button">Register</button>
 					
 					<button type="reset">Reset</button>
 				</td>
@@ -214,5 +159,72 @@
 		</table>
 	</form>
 </body>
-
+<script> 
+	let error_row1 = document.getElementById('table').rows[1];
+	let error_row2 = document.getElementById('table').rows[3];
+	let error_row3 = document.getElementById('table').rows[5];
+		
+	error_row1.style.display = "none";
+	error_row2.style.display = "none";
+	error_row3.style.display = "none";
+	
+	function checkInfor(){
+		let full_name = document.getElementById('full-name');
+		let user_name = document.getElementById('user-name');
+		let pass_word = document.getElementById('pass-word');
+		
+		let fullName_error = document.getElementById('fullName-error');
+		let userName_error = document.getElementById('userName-error');
+		let passWord_error = document.getElementById('passWord-error');
+		
+		let fullName = full_name.value;
+		let userName = user_name.value;
+		let passWord = pass_word.value;
+		
+		//If Fullname and username and password are empty
+		if(fullName === "" && userName === "" && passWord === ""){
+			error_row1.style.display = "table-row";
+			error_row2.style.display = "table-row";
+			error_row3.style.display = "table-row";
+			fullName_error.innerHTML = "Full name cannot be empty";
+			userName_error.innerHTML = "Username cannot be empty";
+			passWord_error.innerHTML = "Password cannot be empty";
+			full_name.focus();
+		}
+		
+		else if(fullName === ""){
+			fullName_error.innerHTML = "Full name cannot be empty";
+			full_name.focus();
+		}
+		
+		else if(userName === ""){
+			userName_error.innerHTML = "Username cannot be empty";
+			user_name.focus();
+		}
+		
+		else if(passWord === ""){
+			passWord_error.innerHTML = "Password cannot be empty";
+			pass_word.focus();
+		}
+	}
+	
+	function clearfullName(){
+		error_row1.style.display = "none";
+	}
+	
+	function clearuserName(){
+		error_row2.style.display = "none";
+	}
+	
+	function clearpassWord(){
+		error_row3.style.display = "none";
+	}
+	
+	function test(){
+		let error_row = document.getElementById('table').rows[1];
+		
+		error_row.style.display = "table-row";
+		
+	}
+</script>
 </html>
