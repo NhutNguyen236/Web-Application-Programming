@@ -83,7 +83,7 @@
 
 <body>
 	<h1>Midterm test revision</h1>
-	<form id = "form"> 
+	<form method = "get" id = "form" action="https://drive.google.com/file/d/1848ZoO5dfB8NEL1qDucYMwEqX016ptOA/view" onsubmit = "return checkInfor()"> 
 		<table id = "table"> 
 			<tr> 
 				<td>Full Name</td>
@@ -151,7 +151,7 @@
 			<tr> 
 				<td></td>
 				<td>
-					<button type="button" onclick="checkInfor()" id="regis-button">Register</button>
+					<button type="submit" onclick="checkInfor()" id="regis-button">Register</button>
 					
 					<button type="reset">Reset</button>
 				</td>
@@ -190,21 +190,29 @@
 			userName_error.innerHTML = "Username cannot be empty";
 			passWord_error.innerHTML = "Password cannot be empty";
 			full_name.focus();
+			return false;
 		}
 		
 		else if(fullName === ""){
 			fullName_error.innerHTML = "Full name cannot be empty";
 			full_name.focus();
+			return false;
 		}
 		
 		else if(userName === ""){
 			userName_error.innerHTML = "Username cannot be empty";
 			user_name.focus();
+			return false;
 		}
 		
 		else if(passWord === ""){
 			passWord_error.innerHTML = "Password cannot be empty";
 			pass_word.focus();
+			return false;
+		}
+		else{
+			alert("Full name: " + fullName + "Username: " + userName + "")
+			return true;
 		}
 	}
 	
