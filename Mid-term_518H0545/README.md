@@ -23,6 +23,9 @@ No Installation required
 HTML 
 CSS
 JS
+
+Text-editor: Notepad++, VS Code
+Compiler: Chrome 85.0.4183.121
 ```
 
 ## Status
