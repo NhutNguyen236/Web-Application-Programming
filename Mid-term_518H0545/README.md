@@ -26,5 +26,5 @@ JS
 ```
 
 ## Status
-Still in progress <br>
+<p align = "center"><em>Still in progress</em></p>
 <p align = "center"><img src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="500" height="250"/></p>
