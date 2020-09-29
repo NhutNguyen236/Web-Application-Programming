@@ -102,7 +102,20 @@
 			full_name.focus();
 		}
 		
-		else if
+		else if(fullName === ""){
+			fullName_error.innerHTML = "Full name cannot be empty";
+			full_name.focus();
+		}
+		
+		else if(userName === ""){
+			userName_error.innerHTML = "Username cannot be empty";
+			user_name.focus();
+		}
+		
+		else if(passWord === ""){
+			passWord_error.innerHTML = "Password cannot be empty";
+			pass_word.focus();
+		}
 	}
 	
 	function clearfullName(){
