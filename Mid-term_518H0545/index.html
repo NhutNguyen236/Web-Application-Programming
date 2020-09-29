@@ -1,159 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+function checkValidate(){
+	let firstname_id = document.getElementById('firstname');
+	let lastname_id = document.getElementById('lastname');
+	let email_id = document.getElementById('email');
+	let firstname_error = document.getElementById('alert_firstname');
+	
+	
+	let firstName = firstname_id.value;
+	let lastName = lastname_id.value;
+	let Email = email_id.value;
+	
+	//Check first name if it is empty or not
+	if(firstName === "" && lastName === "" && Email === ""){
+		firstname_error.innerHTML = "Please enter your first name";
+		document.getElementById('alert_lastname').innerHTML = "Please enter your last name";
+		document.getElementById('alert_email').innerHTML = "Please enter your email";
+		return false;
+	}
+	
+	//Check if firstname is still empty
+	if(firstName === ""){
+		document.getElementById('alert_firstname').innerHTML = "Please enter your first name";
+		firstname_id.focus();
+		return false;
+	}
+	
+	//Check if lastname is still empty
+	if(lastName === ""){
+		document.getElementById('alert_lastname').innerHTML = "Please enter your last name";
+		lastname_id.focus();
+		return false;
+	}
+	
+	//Check if email is still empty
+	else if(Email === ""){
+		document.getElementById('alert_email').innerHTML = "Please enter your email";
+		email_id.focus();
+		return false;
+	}
+	
+	//check if email is valid
+	else if(!Email.includes("@")){
+		document.getElementById('alert_email').innerHTML = "Your email is invalid, dun fool around";
+		return false;
+	}
+	
+	else{
+		return true;
+	}
+	
+}
 
-<head>
-    <title>Midterm-Test</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+function clearEmailAlert(){
+	let errorMessage = document.getElementById('alert_email').innerHTML = "";
+}
+	
+function clearFirstNameAlert(){
+	let errorMessage = document.getElementById('alert_firstname').innerHTML = "";
+}
 
-<!--CSS-->
-<style>
-	body{
-		background-image: url("background.png");
-		background-size: cover;
-	}
-	
-	h1{
-		text-align: center;
-		color: red;
-		font-family: sans-serif;
-	}
-	
-	#form{
-		font-weight: bold;
-		font-family: sans-serif;
-		background-color: trans;
-		margin: 30px auto;
-		min-width: 400px;
-	}
-	
-	#table{
-		background-color: #ddf545;
-		margin: auto;
-		padding: 16px;
-		border-radius: 10px;
-	}
-	
-	#table td{
-		padding: 8px 0;
-		padding-right: 20px;
-	}
-	
-	input[type = "text"], input[type = "password"]{
-		min-width: 300px;
-		padding: 5px;
-		border-radius: 3px;
-		border: 1px solid black;
-	}
-	
-	input[type = "text"]:focus, input[type = "password"]:focus{
-		outline-color: red;
-		background-color: #6ba9cf;
-	}
-	
-	button{
-		margin-right: 30px;
-		border: none;
-		border-radius: 5px;
-		background-color: #40424d;
-		color: white;
-		padding: 8px 25px 8px 25px;
-	}
-	
-	button:hover{
-		background-color: #17181a;
-	}
-	
-	select{
-		min-width: 250px;
-		padding: 5px 25px 5px 5px;
-	}
-	
-	#error-message{
-		color: #942652;
-	}
-</style>
+function clearLastNameAlert(){
+	let errorMessage = document.getElementById('alert_lastname').innerHTML = "";
+}
 
-<script> 
-	function checkInfor(){
-		let full_name = document.getElementById('full-name');
-		let user_name = document.getElementById('user-name');
-		let errorMess = document.getElementById('error-message');
+function InsertValue(){
+	if(checkValidate() == true){
+		let firstname_id = document.getElementById('firstname');
+		let lastname_id = document.getElementById('lastname');
+		let email_id = document.getElementById('email');
 		
-		let fullName = full_name.value;
-		let userName = user_name.value;
+		let firstName = firstname_id.value;
+		let lastName = lastname_id.value;
+		let Email = email_id.value;
+
+		//row_define
+		let tr = document.createElement('tr');
+		let td1 = document.createElement('td');
+		let td2 = document.createElement('td');
+		let td3 = document.createElement('td');
+		let td4 = document.createElement('td');
+
+		td1.innerHTML = firstName;
+		td2.innerHTML = lastName;
+		td3.innerHTML = Email;
+		td4.innerHTML = '<button onclick = "removeRow(this)">Delete</button>';
+
+		tr.appendChild(td1);
+		tr.appendChild(td2);
+		tr.appendChild(td3);
+		tr.appendChild(td4);
+
+		let tbody = document.getElementById('tbody');
+		tbody.appendChild(tr);
 		
-		if(fullName === "" && userName === ""){
-			errorMess.innerHTML = "Please enter your full name and Username";
-			full_name.focus();
-		}
+		//reset form after clicking ADD
+		document.getElementById("form").reset();
 	}
-</script>
 
-<body>
-	<h1>Midterm test revision</h1>
-	<form id = "form"> 
-		<table id = "table"> 
-			<tr> 
-				<td>Full Name</td>
-				<td> 
-					<input type = "text" id = "full-name" name = "fullname" placeholder = "Full Name">	
-				</td>
-			</tr>
-				
-			<tr> 
-				<td>Username</td>
-				<td> 
-					<input type = "text" id = "user-name" name = "username" placeholder = "Username">	
-				</td>
-			</tr>
-				
-			<tr> 
-				<td>Password</td>
-				<td> 
-					<input type = "password" id = "pass-word" name = "password">	
-				</td>
-			</tr>
-				
-			<tr> 
-				<td>Gender</td>
-				<td>
-					<input type="radio" name="gender" value = "1"/>
-					<label for="gender1">Male</label>
-						
-					<input type="radio" name="gender" value = "0"/>
-					<label for="gender2">Female</label>
-				</td>
-			</tr>
-				
-			<tr>
-				<td>Country</td>
-				<td> 
-					<select name="countries">
-						<option value= "vietnam" >VietNam</option>
-						<option value= "cam" >cambodia</option>
-						<option value= "thai" >ThaiLand</option>
-						<option value= "sing" >Singapore</option>
-					</select>
-				</td>
-			</tr>
-			
-			<tr> 
-				<td></td>
-				<td id = "error-message"><p></p></td>
-			</tr>
-			
-			<tr> 
-				<td></td>
-				<td>
-					<button type="button" onclick = "checkInfor()">Register</button>
-					
-					<button type="reset">Reset</button>
-				</td>
-			</tr>
-		</table>
-	</form>
-</body>
+	else{
+		alert("Not good");
+		return false;
+	}
+}
 
-</html>
+function removeRow(button){
+	let but = button.parentNode;
+	let tr = but.parentNode;
+	let tbody = tr.parentNode;
+	
+	tbody.removeChild(tr);
+}
+
+window.addEventListener('keyup',function(e){
+	if(e.keyCode === 13){
+		InsertValue();
+	}
+});
+
