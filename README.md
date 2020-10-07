@@ -8,6 +8,6 @@
   *Still in updating process*
 </p>  
 
-<p>
+<p align = "center">
   <img src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
 </p>
