@@ -4,6 +4,10 @@
 
 ## Laboratories for my subject Web_Program_Application
 
-*Still in updating process*
+<p align = "center">
+  *Still in updating process*
+</p>  
 
-<img src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
+<p>
+  <img src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
+</p>
