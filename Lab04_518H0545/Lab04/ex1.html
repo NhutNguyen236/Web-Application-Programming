@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--
+
+    VÍ DỤ NÀY MINH HỌA TÍNH NĂNG RESPONSIVE, KÉO RESIZE TRÌNH DUYỆT WEB ĐỂ XEM KẾT QUẢ
+    
+    GIẢI THÍCH:
+    
+    - MÀN HÌNH DESKTOP LỚN: 12 CỘT
+    - MÀN HÌNH DESKTOP: 6 CỘT
+    - MÀN HÌNH MÁY TÍNH BẢNG: 3 CỘT
+    - MÀN HÌNH ĐIỆN THOẠI: 2 CỘT
+
+    mặc định = extra small = màn hình điện thoại nhỏ
+    sm = small = màn hình điện thoại xoay ngang
+    md = medium = màn hình tablet hoặc một số điện thoại độ phân giải cao khi xoay ngang
+    lg = large = màn hình desktop hoặc tablet khi quay ngang
+    xl = extra large = màn hình desktop lớn
+
+    
+    col-sm-4 có nghĩa là nếu chạy trên màn hình điện thoại (sm) thì cột này có độ rộng là 4/12 (1/3 màn hình ==> có 3 cột/dòng)
+    col-md-2 có nghĩa là nếu chạy trên màn hình tablet (md) thì cột này có độ rộng là 2/12 (1/6 màn hình ==> có 6 cột/dòng)
+    col-xl-1 có nghĩa là nếu chạy trên màn hình máy tính (lg) thì cột này có độ rộng là 1/12 (1/12 màn hình ==> có 12 cột/dòng)
+    col-xl-2 có nghĩa là nếu chạy trên màn hình máy tính lớn (xl) thì cột này có độ rộng là 2/12 (nữa màn hình ==> 6 cột / dòng)
+    col-4: thì item này chiếm 4/12 ở mọi loại màn hình, suy ra có 3 item / dòng
+
+ -->
+
+<br>
+<p>Thay đổi kích thước trình duyệt web để thấy hiệu ứng</p>
+<br>
+
+<!-- buộc toàn bộ dòng và cột phải bỏ trong class container -->
+<div class="container">
+
+    <!-- dòng phải là con trực tiếp của container, mang class row -->
+    <div class="row">
+
+        <!-- cột 1 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 2 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 3 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 14 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 5 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 6 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 7 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 8 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 9 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 10 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 11 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+        <!-- cột 12 -->
+        <div class="col-sm-6 col-md-4 col-lg-2 col-xl-1">
+            <p style="color: white; background-color: green; padding: 10px">Hello</p>
+        </div>
+
+
+    </div> <!-- Kết thúc dòng 1 -->
+
+</div>
+
+
+</body>
+</html>
