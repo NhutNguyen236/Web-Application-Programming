@@ -5,7 +5,7 @@
 ## Laboratories for my subject Web_Program_Application
 
 ## Links
-[TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
+* [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
 
 <p align = "center">
   *Still in updating process*
