@@ -4,6 +4,13 @@
 
 ## Laboratories for my subject Web_Program_Application
 
-*Still in updating process*
+## Links
+* [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
 
-<img src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
+<p align = "center">
+  *Still in updating process*
+</p>  
+
+<p align = "center">
+  <img src="https://thumbs.gfycat.com/WindyHarmoniousGrouper-small.gif" width="250" height="250"/>
+</p>
