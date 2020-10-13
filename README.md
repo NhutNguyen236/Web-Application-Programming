@@ -7,6 +7,7 @@
 ## Links
 * [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
 
+## Status
 <p align = "center">
   *Still in updating process*
 </p>  
