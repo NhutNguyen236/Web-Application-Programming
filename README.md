@@ -7,7 +7,11 @@
 ## Table of contents
 
 * [Lab1](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab01_518H0545) - Making of a very basic webite with the use of 100% HTML and CSS.
-* [Lab2](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab02_518H0545) - More about CSS and intro to table component
+* [Lab2](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab02_518H0545) - More about CSS and intro to table component.
+* [Lab3](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab03_518H0545) - A glance into Bootstrap but not much but JS is now used in this one.
+* [Lab4](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab04518H0545) - Bootstrap grid system and form validation using Bootstrap.
+* [Lab5](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab05518H0545) - Intro to JQuery and connect to Database.
+* [Lab6](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab06_Begin_to_PHP) - Intro to PHP and more functions with Bootstrap, JS.
 
 ## Links
 * [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
