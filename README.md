@@ -7,6 +7,7 @@
 ## Table of contents
 
 * [Lab1_Very-basic-website-and-its-components](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab01_518H0545): Making of a very basic webite with the use of 100% HTML and CSS
+* [Lab2_More-about-CSS-and-table](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab02_518H0545)
 
 ## Links
 * [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
