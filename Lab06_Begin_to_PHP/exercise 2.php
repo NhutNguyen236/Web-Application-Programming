@@ -70,11 +70,11 @@
                 <form method = "post">
                     <div class="form-group">
                         <label for="num1">1st Operand</label>
-                        <input name = "nu1" type="text" class="form-control" id="num1">
+                        <input name = "nu1" type="text" class="form-control" id="num1" value = "<?php echo $_POST['nu1'];?>">
                     </div>
                     <div class="form-group">
                         <label for="num2">2nd Operand</label>
-                        <input name = "nu2" type="text" class="form-control" id="num2">
+                        <input name = "nu2" type="text" class="form-control" id="num2" value = "<?php echo $_POST['nu2'];?>>
                     </div>
                     <div class="form-group">
                         <div class="custom-control custom-radio custom-control-inline">
