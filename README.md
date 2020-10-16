@@ -10,7 +10,7 @@
 
 ## Links
 * [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
-* [AMPPS](https://ampps.com/download) - recommend using this one since it is so comfortable.
+* [AMPPS](https://ampps.com/download) - recommend using this one as your localhost since it is so comfortable.
 ## Status
 <p align = "center">
   *Still in updating process*
