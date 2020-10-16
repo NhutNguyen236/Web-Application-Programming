@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <title>PHP Exercises</title>
+    <title>PHP-simple-calculator</title>
 </head>
 
 <body>
@@ -39,9 +39,26 @@
             else if(empty($op)){
                 $error = "Please select one operator";
             }
-            
+
             else{
-                $success = "Hey success";
+                $result = 0;
+                if($op == '+'){
+                    $result = $number1 + $number2;
+                }
+
+                if($op == '-'){
+                    $result = $number1 - $number2;
+                }
+                
+                if($op == '*'){
+                    $result = $number1*+ $number2;
+                }
+
+                if($op == '/'){
+                    $result = $number1 / $number2;
+                }
+
+                $success = "$number1 $op $number2 =  $result";
             }
         }
     ?>
@@ -86,14 +103,12 @@
                 </form>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6 mx-auto mt-0 px-3 py-3 text-center">
-                <?php
-                    if(!is_null($success)){
-                        echo "<div class=\"alert alert-success text-center mt-1\">$success</div>";
-                    }
-                ?>
-            </div>
+        <div class="col-md-6 mx-auto mt-0 text-center">
+            <?php
+                if(!is_null($success)){
+                    echo "<div class=\"alert alert-success text-center mt-1\">$success</div>";
+                }
+            ?>
         </div>
     </div>
 </body>
