@@ -51,7 +51,7 @@
                 }
                 
                 if($op == '*'){
-                    $result = $number1*+ $number2;
+                    $result = $number1 * $number2;
                 }
 
                 if($op == '/'){
@@ -65,7 +65,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-6 my-5 mx-auto border rounded px-3 py-3">
+            <div class="col-md-6 my-4 mx-auto border rounded px-3 py-3">
                 <h4 class="text-center">Basic Operations</h4>
                 <form method = "post">
                     <div class="form-group">
@@ -86,7 +86,7 @@
                             <label for="subtract" type="radio" class="custom-control-label">Trừ</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
-                            <input name = "opr1" value = "*" id="multiply" type="radio" class="custom-control-input">
+                            <input name = "op" value = "*" id="multiply" type="radio" class="custom-control-input">
                             <label for="multiply" type="radio" class="custom-control-label">Nhân</label>
                         </div>
                         <div class="custom-control custom-radio custom-control-inline">
@@ -103,7 +103,7 @@
                 </form>
             </div>
         </div>
-        <div class="col-md-6 mx-auto mt-0 text-center">
+        <div class="col-md-6 mx-auto mt-1 text-center px-3 py-3">
             <?php
                 if(!is_null($success)){
                     echo "<div class=\"alert alert-success text-center mt-1\">$success</div>";
