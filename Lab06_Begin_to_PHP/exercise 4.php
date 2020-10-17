@@ -24,11 +24,14 @@
 
         $name_error = null;
         $email_error = null;
+        $browser_error = null;
 
         if(isset($_POST['name']) && isset($_POST['email'])){
 
             $name = $_POST['name'];
             $email = $_POST['email'];
+            
+            echo $_POST['browser'];
 
             if(empty($name) && empty($email)){
                 $name_error = "Please enter your name";
@@ -42,6 +45,10 @@
             else if(empty($email)){
                 $email_error = "Your email is still empty";
             }   
+
+            else if(!(isset($_POST['b1']) || isset($_POST['b2']) || isset($_POST['b3']) || isset($_POST['b4']))){
+                $browser_error = "Please choose a browser";
+            }
         }
     ?>
     <div class="container">
@@ -63,7 +70,7 @@
                     <div class="form-group">
                         <label for="email">Your email</label>
                         <div>
-                            <input name = "email" type="text" id="email" class="form-control" placeholder="Your email">
+                            <input name = "email" type="text" id="email" class="form-control" placeholder="Your email" value="<?php echo $_POST['email'];?>">
                             <span class="error">
                                 <?php 
                                     echo $email_error;
@@ -85,21 +92,27 @@
                     <div class="form-group">
                         <legend class="col-form-label">Favorite web browsers</legend>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="chrome">
+                            <input name = "b1" type="checkbox" class="custom-control-input" id="chrome">
                             <label class="custom-control-label" for="chrome">Google Chrome</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="ff">
+                            <input name = "b2" type="checkbox" class="custom-control-input" id="ff">
                             <label class="custom-control-label" for="ff">Firefox</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="safari">
+                            <input name = "b3" type="checkbox" class="custom-control-input" id="safari">
                             <label class="custom-control-label" for="safari">Safari</label>
                         </div>
                         <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="edge">
+                            <input name = "b4" type="checkbox" class="custom-control-input" id="edge">
                             <label class="custom-control-label" for="edge">Edge</label>
                         </div>
+
+                        <span class="error">
+                            <?php 
+                                echo $browser_error;
+                            ?>
+                        </span>
                     </div>
                     <div class="form-group">
                         <legend class="col-form-label">Prefered Operating System</legend>
