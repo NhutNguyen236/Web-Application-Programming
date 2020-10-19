@@ -1,4 +1,4 @@
-# Welcome to Lab number 06
+# Welcome to Lab number 06 - Basic PHP and its friends
 
 ## First step 
 The very first thing you need to know what PHP actually is:
