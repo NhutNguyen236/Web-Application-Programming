@@ -12,10 +12,15 @@
 * [Lab4](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab04518H0545) - Bootstrap grid system and form validation using Bootstrap.
 * [Lab5](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab05518H0545) - Intro to JQuery and connect to Database.
 * [Lab6](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab06_Begin_to_PHP) - Intro to PHP, AJAX and more functions with Bootstrap, JS. Switching to other tabs and form validation and data transfer with php are included
+* [Lab7](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab07_A-working-login-out-site) - This lab will tell you the exact things that you need to do when you have any sparkle in your head talking about a working "Log-in, Home, Log-out site"
 
 ## Links
 * [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
-* [AMPPS](https://ampps.com/download) - recommend using this one as your localhost since it is so comfortable.
+* [AMPPS](https://ampps.com/download) - recommend using this one as your localhost since it is so comfortable, *note that open download link in new window, sometimes traditional download method won't work*.
+### How to config AMPPS port when it is used by another service? 
+* Step 1: Go to AMPPS install folder and access to folder name *apache* then to *conf* so the path must be *x:\x\Ampps\apache\conf*
+* Step 2: Open file named *httpd.conf*
+* Step 3: Ctrl + H to open Replace window and find keyword *80* then replace it with something else for example: 88, 8012, etc.
 ## Status
 <p align = "center">
   *Still in updating process*
