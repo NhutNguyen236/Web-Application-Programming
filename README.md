@@ -16,7 +16,7 @@
 
 ## Links
 * [TutorialRepublic](https://www.tutorialrepublic.com/twitter-bootstrap-tutorial/bootstrap-helper-classes.php)
-* [AMPPS](https://ampps.com/download) - recommend using this one as your localhost since it is so comfortable.
+* [AMPPS](https://ampps.com/download) - recommend using this one as your localhost since it is so comfortable, *note that open download link in new window, sometimes traditional download method won't work*.
 ## Status
 <p align = "center">
   *Still in updating process*
