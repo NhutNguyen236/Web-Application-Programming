@@ -13,7 +13,7 @@
 * [Lab5](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab05_518H0545) - Intro to JQuery and connect to Database.
 * [Lab6](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab06_Begin_to_PHP) - Intro to PHP, AJAX and more functions with Bootstrap, JS. Switching to other tabs and form validation and data transfer with php are included
 * [Lab7](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab07_A-working-login-out-site) - This lab will tell you the exact things that you need to do when you have any sparkle in your head talking about a working "Log-in, Home, Log-out site"
-
+* [Lab8](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab08_Connect-to-MySQL-DB)
 ## Tools I used in this repo
 
 * Text editor: [Notepad++](https://notepad-plus-plus.org/downloads/), [Visual Studio Code](https://code.visualstudio.com/download)
