@@ -1,4 +1,4 @@
-# Welcome to Lab number 06 - Basic PHP and its friends
+# Lab 06 - Basic PHP and its friends
 
 <p align = "center"><img src = "https://images.viblo.asia/4fd4cec9-3980-4094-8540-95d7b32be637.png" width = "200" height = "150"/></p>
 
