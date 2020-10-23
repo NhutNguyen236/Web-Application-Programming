@@ -10,3 +10,4 @@
 
 ## How to use phpMyAdmin? 
 * Usually to open phpMyAdmin, you need to enter this adress *localhost/phpmyadmin* or "localhost: <your port>/phpmyadmin"
+* To connect to your phpmyAdmin, use command mysqli("localhost", username, password, dbname)
