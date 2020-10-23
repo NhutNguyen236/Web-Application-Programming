@@ -16,7 +16,7 @@
 
 ## Tools I used in this repo
 
-* Text editor: Notepad++, Visual Studio Code
+* Text editor: [Notepad++](https://notepad-plus-plus.org/downloads/), [Visual Studio Code](https://code.visualstudio.com/download)
 * Local host: AMPPS
 * Web browser: Chrome
 
