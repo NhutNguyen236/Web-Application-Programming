@@ -9,3 +9,4 @@
 * phpMyAdmin is an open-source software tool introduced on September 9, 1998, which is written in PHP. Basically, it is a third-party tool to manage the tables and data inside the database
 
 ## How to use phpMyAdmin? 
+* Usually to open phpMyAdmin, you need to enter this adress *localhost/phpmyadmin* or "localhost: <your port>/phpmyadmin"
