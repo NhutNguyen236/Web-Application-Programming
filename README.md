@@ -17,7 +17,7 @@
 ## Tools I used in this repo
 
 * Text editor: [Notepad++](https://notepad-plus-plus.org/downloads/), [Visual Studio Code](https://code.visualstudio.com/download)
-* Local host: AMPPS
+* Local host: AMPPS, [XAMPP for Windows 32 bit](https://xamppguide.com/download/xampp-for-windows-32-bit/)
 * Web browser: Chrome
 
 ## Links
