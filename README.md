@@ -9,8 +9,8 @@
 * [Lab1](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab01_518H0545) - Making of a very basic webite with the use of 100% HTML and CSS.
 * [Lab2](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab02_518H0545) - More about CSS and intro to table component.
 * [Lab3](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab03_518H0545) - A glance into Bootstrap but not much but JS is now used in this one.
-* [Lab4](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab04518H0545) - Bootstrap grid system and form validation using Bootstrap.
-* [Lab5](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab05518H0545) - Intro to JQuery and connect to Database.
+* [Lab4](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab04_518H0545) - Bootstrap grid system and form validation using Bootstrap.
+* [Lab5](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab05_518H0545) - Intro to JQuery and connect to Database.
 * [Lab6](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab06_Begin_to_PHP) - Intro to PHP, AJAX and more functions with Bootstrap, JS. Switching to other tabs and form validation and data transfer with php are included
 * [Lab7](https://github.com/NhutNguyen236/Web_Program_Application/tree/master/Lab07_A-working-login-out-site) - This lab will tell you the exact things that you need to do when you have any sparkle in your head talking about a working "Log-in, Home, Log-out site"
 
