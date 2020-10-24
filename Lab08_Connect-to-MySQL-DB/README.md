@@ -19,6 +19,6 @@
 *Note that the ways to fix them are the same for any kind of localhost in the market*
 ### *Access denied for user 'root'@'localhost' (using password: NO)*
 * With AMPPS Go to file ```my.ini``` it is right in folder *mysql* but with XAMPP it is in ```mysql/bin/my.ini```
-* Look for section [mysqld]* and add *skip-grant-tables*
+* Look for section ```[mysqld]``` and add *skip-grant-tables*
 * Restart your MySQL in AMPPS control panel by turn it off and turn it on again 
 * Go back to your phpmyAdmin and go to table you want to grant access to then go to *Priviledge* then choose *change password* -> choose *No password*
