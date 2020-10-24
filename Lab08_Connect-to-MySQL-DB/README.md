@@ -22,3 +22,4 @@
 * Look for section ```[mysqld]``` and add *skip-grant-tables*
 * Restart your MySQL in AMPPS control panel by turn it off and turn it on again 
 * Go back to your phpmyAdmin and go to table you want to grant access to then go to *Priviledge* then choose *change password* -> choose *No password*
+But this solution doesn't work sometimes so I highly recommend all of you to set up a password for each dbusername so your phpmyAdmin will be more secured
