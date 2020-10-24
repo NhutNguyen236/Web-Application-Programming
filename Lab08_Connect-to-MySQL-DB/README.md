@@ -14,3 +14,11 @@
   
 ## Lessons description
 * We have 2 folders named respectively *A-simple-connection* and *Lab08*. For *A-simple-connection*, I made a very simple sign-up form and connected it to phpmyAdmin to store the data so the main function of this folder is to show the way we write the input to DB and just it. For *Lab08*, it is the main lab so let see. 
+
+## Some problems you may have
+*Note that the ways to fix them are the same for any kind of localhost in the market*
+### *Access denied for user 'root'@'localhost' (using password: NO)*
+* Restart your MySQL in AMPPS control panel by turn it off and turn it on again 
+* Go to folder *mysql* -> *bin* -> *my.ini*
+* Go to [mysqld]* section and add *skip-grant-tables*
+* Go back to your phpmyAdmin and go to table you want to grant access to then go to *Priviledge* then choose *change password* -> choose *No password*
