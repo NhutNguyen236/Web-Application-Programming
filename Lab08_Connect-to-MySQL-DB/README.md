@@ -4,7 +4,7 @@
   <img src = "https://upload.wikimedia.org/wikipedia/commons/9/95/PhpMyAdmin_logo.png" width = "200" height = "150"/>
 </p>
 
-## What is phpMyAdmin?
+## What is phpMyAdmin? 😉
 
 * phpMyAdmin is an open-source software tool introduced on September 9, 1998, which is written in PHP. Basically, it is a third-party tool to manage the tables and data inside the database
 
@@ -17,7 +17,7 @@
 
 ## Some problems you may have
 *Note that the ways to fix them are the same for any kind of localhost in the market*
-### *Access denied for user 'root'@'localhost' (using password: NO)*
+### *Access denied for user 'root'@'localhost' (using password: NO)* :sleepy:
 * With AMPPS Go to file ```my.ini``` it is right in folder *mysql* but with XAMPP it is in ```mysql/bin/my.ini```
 * Look for section ```[mysqld]``` and add *skip-grant-tables*
 * Restart your MySQL in AMPPS control panel by turn it off and turn it on again 
