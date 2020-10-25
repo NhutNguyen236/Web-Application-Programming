@@ -1,7 +1,7 @@
 # Lab 08 - Making it possible with DB using phpMyAdmin
 
 <p align = "center">
-  <img src = "https://upanh.vn-z.vn/images/2020/03/23/logo-og.png" width = "200" height = "150"/>
+  <img src = "https://upload.wikimedia.org/wikipedia/commons/9/95/PhpMyAdmin_logo.png" width = "200" height = "150"/>
 </p>
 
 ## What is phpMyAdmin?
