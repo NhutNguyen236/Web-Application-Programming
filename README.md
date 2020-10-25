@@ -17,7 +17,7 @@
 ## Tools I used in this repo
 
 * Text editor: [Notepad++](https://notepad-plus-plus.org/downloads/), [Visual Studio Code](https://code.visualstudio.com/download)
-* Local host: AMPPS, [XAMPP for Windows 32 bit](https://xamppguide.com/download/xampp-for-windows-32-bit/)
+* Local host: AMPPS, [XAMPP for Windows 32 bit](https://xamppguide.com/download/xampp-for-windows-32-bit/) - At school, they use XAMPP so I should put it up there too.
 * Web browser: Chrome
 
 ## Links
@@ -25,7 +25,6 @@
 * [AMPPS for 64bit](https://ampps.com/download) - recommend using this one as your localhost since it is so comfortable, *note that open download link in new window, sometimes traditional download method won't work*.
 * [AMPPS for 32bit](https://ampps.informer.com/download/#downloading) - since AMPPS is supported better on 64bit but we cannot forget the 32 one, it is still functionable
 * [Bootstrap import](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Bootstrap always updates its components and stuffs so please take a look at this to import the right <script>
-* [XAMPP](https://www.apachefriends.org/download.html) - Not recommend but it is good for me now :) 
 ### How to config AMPPS port when it is used by another service? 
 * Step 1: Go to AMPPS install folder and access to folder name *apache* then to *conf* so the path must be *x:\x\Ampps\apache\conf*
 * Step 2: Open file named *httpd.conf*
