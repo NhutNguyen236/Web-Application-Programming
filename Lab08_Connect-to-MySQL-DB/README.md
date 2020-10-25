@@ -12,7 +12,7 @@
 * Usually to open phpMyAdmin, you need to enter this adress *localhost/phpmyadmin* or "localhost: <your port>/phpmyadmin"
 * To connect to your phpmyAdmin, use command mysqli("localhost", username, password, dbname)
   
-## Lessons description
+## Folders description
 * We have 2 folders named respectively *A-simple-connection* and *Lab08*. For *A-simple-connection*, I made a very simple sign-up form and connected it to phpmyAdmin to store the data so the main function of this folder is to show the way we write the input to DB and just it. For *Lab08*, it is the main lab so let see. 
 
 ## Some problems you may have
