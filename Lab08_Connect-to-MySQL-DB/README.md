@@ -16,7 +16,7 @@
 * We have 2 folders named respectively *A-simple-connection* and *Lab08*. For *A-simple-connection*, I made a very simple sign-up form and connected it to phpmyAdmin to store the data so the main function of this folder is to show the way we write the input to DB and just it. For *Lab08*, it is the main lab so let see. 
 
 ## Some problems you may have
-*Note that the ways to fix them are the same for any kind of localhost in the market*
+*Note that the ways to fix them are the same for any kind of localhost in the market and I know that you will not read this but Google the solution instead but I do... :sweat_smile:*
 
 ### *Access denied for user 'root'@'localhost' (using password: NO)* :sleepy:
 * With AMPPS Go to file ```my.ini``` it is right in folder *mysql* but with XAMPP it is in ```mysql/bin/my.ini```
