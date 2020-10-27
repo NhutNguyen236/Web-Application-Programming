@@ -27,9 +27,7 @@ But this solution doesn't work sometimes so I highly recommend all of you to set
 
 ### *Error: MySQL said: Cannot connect Invalid settings* :sleepy:
 This error is usually raised when you change your root localhost phpmyadmin password 
-* With AMPPS, go to root folder open folder ```phpmyadmin```
+* With AMPPS, go to root folder open folder ```phpmyadmin``` then you should have found this file `config.inc.php`, if so, open it up
 * Search for this one 
-
-<img src = "https://lh3.googleusercontent.com/cKp-sc5rEVRmhRZN1gtSqfbKPtOzOrbIPHValStfBLmZIqKdn1GEoWCOh7BhCTNKo_vL6WwyPxGgk7F6MrhX=w1919-h937"/>
-
-* Then enter your password 
+`$cfg['Servers'][$i]['password']`
+* Then enter your password in the format of `$cfg['Servers'][$i]['password'] = '<your-password>'`
