@@ -6,4 +6,5 @@
 $sql = "insert into user(firstname,lastname,username,pass) values('$firstname','$lastname','$username','$password')";
 ```
 
-* Some screenshots and detail tutorials will be added later 
+* I have done a sign-up practice in this folder so log-in will be the next, stay tune...
+
