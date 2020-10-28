@@ -1,4 +1,4 @@
-# A simple connection means *"Just connect and writabe"*
+# A simple connection means *"Just connectable and writabe"*
 
 * This folder is mostly about that, I have just connect to my created local phpmyAdmin and add a user by a simple 
 
