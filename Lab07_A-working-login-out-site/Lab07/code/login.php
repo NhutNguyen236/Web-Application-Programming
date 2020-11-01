@@ -45,18 +45,23 @@
             $error = "Please enter password";
         }
 
-        else if(strcasecmp($username, 'NhutNguyen25') != 0){
-            if(strcasecmp($password, '123456') != 0){
-                $error = "Your username or password is wrong";
-            }
-            else{
-                $error = "Your username is wrong";
-            }
+        /*
+            - strcasecmp will return 1 if 2 strings are equal, 0 if opposite
+            - in this condition, I will compare username and password with given data
+        */
+        else if(strcasecmp($username, 'NhutNguyen25') != 0 || strcasecmp($password, '123456') != 0){
+            $error = "Your username or password is wrong";
         }
 
+        /*
+            - header: for detail https://www.w3schools.com/php/func_network_header.asp
+            - in this case, header is used to switch to another page, with 'Location: <name.php>' it will head you to that page
+            - exit() to totally exit the state of page
+            - next stop, I will use cookies to store registry
+        */
         else{
-            $status = 1;
-            $error = "Nice! Everything is OK";
+            header('Location: home.php');
+            exit();
         }
     }
 ?>
@@ -82,14 +87,11 @@
                         if(!empty($error) && $status == 0){
                             echo "<div class = \"alert alert-danger\">$error</div>";        
                         }
-                        else if(!empty($error) && $status != 0){
-                            echo "<div class = \"alert alert-success\">$error</div>";        
-                        }
                     ?>
                     <button type = "submit" class="btn btn-success px-5">Login</button>
                 </div>
                 <div class="form-group">
-                    <p>Forgot password? <a href="#">Click here</a></p>
+                    <p>Forgot password? <a href="forgot_pwd.php">Click here</a></p>
                 </div>
             </form>
 

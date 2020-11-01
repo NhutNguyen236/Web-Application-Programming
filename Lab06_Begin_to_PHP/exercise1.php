@@ -13,7 +13,7 @@
     <table class = "table table-bordered table-dark text-center">
         <tr class = "table-primary">
             <td colspan = "10">
-                Bảng cửu chương
+                Multiplication table
             </td>
         </tr>
         <tr>
