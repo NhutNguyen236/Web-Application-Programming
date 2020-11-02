@@ -11,5 +11,6 @@
 $sql = "insert into user(firstname,lastname,username,pass) values('$firstname','$lastname','$username','$password')";
 ```
 
-* I have done a sign-up practice in this folder so log-in will be the next, stay tune...
+* Now you can see, there are two different folders here and what they are? In a brief, `simple-write-db` shows how to simply write your data into a `phpmyadmin` db and store them there, `simple-signup-login` will show you how to make a working signup and login site with some advances from `simple-write-db`
+
 
