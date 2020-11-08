@@ -5,3 +5,7 @@
 ## Things we will learn
 * Cookies
 * Session
+
+## Status 
+* This is not finished yet. 
+

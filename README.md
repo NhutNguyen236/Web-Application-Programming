@@ -1,4 +1,5 @@
 ![alt text](https://camo.githubusercontent.com/72e5d55be4f08bb5a916962c8ee363f63befdca8/68747470733a2f2f7472617669732d63692e6f72672f61766a696e6465722f4d696e696d616c2d546f646f2e7376673f6272616e63683d6d6173746572)
+![number-of-languages](https://img.shields.io/github/languages/count/NhutNguyen236/Web_Program_Application)
 
 <img src = "https://thumbs.gfycat.com/AlarmingJaggedAlaskankleekai-size_restricted.gif" width = "800" height = "80"/> 
 
@@ -25,6 +26,7 @@
 * [AMPPS for 64bit](https://ampps.com/download) - recommend using this one as your localhost since it is so comfortable, **note that open download link in new window, sometimes traditional download method won't work**.
 * [AMPPS for 32bit](https://ampps.informer.com/download/#downloading) - since AMPPS is supported better on 64bit but we cannot forget the 32 one, it is still functionable
 * [Bootstrap import](https://getbootstrap.com/docs/4.1/getting-started/introduction/) - Bootstrap always updates its components and stuffs so please take a look at this to import the right <script>
+ * [Badges](https://shields.io/) - Repos are like boxes, they need badges and stamps too. Sooo, what ya'll waiting for? Put them all on.
 
 ## Status
 <p align = "center">
