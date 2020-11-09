@@ -40,6 +40,10 @@
 			<label for="pwd">Password</label>
 			<input name = "password" type="password" class="form-control" id="pwd" placeholder="Password">
 		</div>
+
+        <div>
+			<a href="index_signup.php">So, you don't have any account?Click here to see the magic</a>
+		</div>
 		
 		<div class = "form-row text-center d-flex justify-content-center mt-3">
 			<button type="submit" class="btn btn-primary">Log in</button>
