@@ -20,5 +20,5 @@ so will see `login.php` runs first even if you are running `index.php`
 ## Demo 
 
 <p align = "center">
-    [](\Screenshots\demo2.gif)
+    <img src = "/Screenshots/demo2.gif" />
 </p>
