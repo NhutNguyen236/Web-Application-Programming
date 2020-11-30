@@ -1,4 +1,4 @@
-# Simple E-mail sending :emoji:
+# Simple E-mail sending :email:
 
 * [`mail` from PHP documentation](https://www.php.net/manual/en/function.mail.php)
 
