@@ -11,7 +11,12 @@
 ## How to use phpMyAdmin? 
 * Usually to open phpMyAdmin, you need to enter this adress *localhost/phpmyadmin* or "localhost: <your port>/phpmyadmin"
 * To connect to your phpmyAdmin, use command mysqli("localhost", username, password, dbname)
-  
+
+## Link for use
+
+* I will follow [this link](https://codewithawa.com/posts/complete-user-registration-system-using-php-and-mysql-database) to write a true working login and signup site which is not really difficult to follow by. 
+* [Password Reset Email](https://www.phpcodingstuff.com/blog/send-reset-password-link-email-php.html)
+
 ## Folders description
 * We have 2 folders named respectively *A-simple-connection* and *Lab08*. For *A-simple-connection*, I made a very simple sign-up form and connected it to phpmyAdmin to store the data so the main function of this folder is to show the way we communicate with the database - Read and Write. For *Lab08*, it is the main lab so let see. 
 * `date-insertion-problem` is about date `phpmyadmin` insertion which I had a problem of writing `date` type in database so I do it step step in this folder 😉
