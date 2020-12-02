@@ -27,12 +27,8 @@
     sendmail_path = "D:\XAMPP\sendmail\sendmail.exe -t -i"
     ```
     - Don't forget to save it
-    - This is not done here, the first send may not successful due to Google Security but just send it then you can expect an email back from Google to verify it was you so go and verify it
-    <p align = "center">
-        <img src = "/Screenshots/sign-in-attempt.png"/>
-    </p>
-    - Then go to your [Google Account setting](https://www.google.com/settings/security/lesssecureapps) then turn on you *Less secure app access* and everything should be done! 
 
+* [W3School lesson](https://www.w3schools.com/php/func_mail_mail.asp) and down there are 2 email sending skills with PHP you should know
 * Example: Sending a simple mail
 
 ```php
@@ -49,3 +45,55 @@
         echo "Email sending failed";
 ?>
 ```
+
+* Sending a php form through email
+```php
+<?php
+    $to = "somebody@example.com, somebodyelse@example.com";
+    $subject = "HTML email";
+
+    $message = "
+    <html>
+    <head>
+    <title>HTML email</title>
+    </head>
+    <body>
+    <p>This email contains HTML Tags!</p>
+    <table>
+    <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    </tr>
+    <tr>
+    <td>John</td>
+    <td>Doe</td>
+    </tr>
+    </table>
+    </body>
+    </html>
+    ";
+
+    // Always set content-type when sending HTML email
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    // More headers
+    $headers .= 'From: <webmaster@example.com>' . "\r\n";
+    $headers .= 'Cc: myboss@example.com' . "\r\n";
+
+    mail($to,$subject,$message,$headers);
+?>
+```
+
+## Specific situation: Password reset mail :page_facing_up:
+
+- There are many ways to send a password reset mail using php but some most popular ways are: 
+    - Sending a HTML form through email using PHP
+    - Sending a link to a reset password page through email
+- Up there I have just done a sample of sending a HTML form through email so I will make a reset password page using Bootstrap and send its link through email but first, you need a database to store password and I have already created one which named `password_reset.sql` , gotta go and import it to your `phpmyadmin`then you can expect this result below
+<p>
+    <img src = "/Screenshots/password_reset_table_before.png"/>
+</p>
+
+
+
