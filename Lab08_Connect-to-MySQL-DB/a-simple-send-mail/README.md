@@ -27,6 +27,11 @@
     sendmail_path = "D:\XAMPP\sendmail\sendmail.exe -t -i"
     ```
     - Don't forget to save it
+    - This is not done here, the first send may not successful due to Google Security but just send it then you can expect an email back from Google to verify it was you so go and verify it
+    <p align = "center">
+        <img src = "/Screenshots/sign-in-attempt.png"/>
+    </p>
+    - Then go to your [Google Account setting](https://www.google.com/settings/security/lesssecureapps) then turn on you *Less secure app access* and everything should be done! 
 
 * Example: Sending a simple mail
 
