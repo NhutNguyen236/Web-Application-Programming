@@ -91,7 +91,7 @@
     - Sending a HTML form through email using PHP
     - Sending a link to a reset password page through email
 - Up there I have just done a sample of sending a HTML form through email so I will make a reset password page using Bootstrap and send its link through email but first, you need a database to store password and I have already created one which named `password_reset.sql` , gotta go and import it to your `phpmyadmin`then you can expect this result below
-<p>
+<p align = "center">
     <img src = "/Screenshots/password_reset_table_before.png"/>
 </p>
 
