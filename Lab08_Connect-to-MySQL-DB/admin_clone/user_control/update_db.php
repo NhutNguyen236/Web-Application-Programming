@@ -39,7 +39,73 @@
         </div>
     </nav>
 
+    <!--Form for admin to insert into sql table-->
+    <div id = "add_user_form">
+        <form method="post" action = "update_function.php?id=<?php echo $_GET['id']?>&&username=<?php echo $_GET['username']?>">
+            <div class="container">
+                <h2>Update for <?php echo $_GET['username'];?></h2> 
+                <div>
+                    <label for="userid"><b>User ID</b></label>
+                    <input type="text" name="userid" value = "<?php echo $_GET['id']?>" required>
+                </div>
+
+                <div>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" name="email" value = "<?php echo $_GET['email']?>" required>
+                </div>                
+                
+                <div>
+                    <label for="username"><b>Username</b></label>
+                    <input type="text" name="username" value = "<?php echo $_GET['username']?>" required>
+                </div>
+                
+                <div>
+                    <label for="psw1"><b>Mật khẩu</b></label>
+                    <input type="text" name="psw1" value = "<?php echo $_GET['password']?>" required>
+                </div>
+                
+                <div>
+                    <label for="name"><b>Họ và tên</b></label>
+                    <input value= "<?php echo $_GET['fullname']?>" type="text" id="name" name="name" required>
+                </div>    
+                
+                <div>
+                    <label for="birthdate"><b>Ngày sinh</b></label><br>
+                    <input type="date" name = "birthdate" value = <?php echo $_GET['birthdate']?>>
+                </div>
+                
+                <div>
+                    <label for="PhoneNumber"><b>Số điện thoại</b></label>
+                    <input type="text" value = "<?php echo $_GET['phone']?>" name="PhoneNumber" required>
+                </div>
+                
+                <div>
+                    <label for="role"><b>Vai trò của bạn là</b></label>
+                </div>                    
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="role" value = "1" <?php if($_GET['role'] == 1){echo "checked=checked";}?>> Học sinh
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="role" value = "2" <?php if($_GET['role'] == 2){echo "checked=checked";}?>> Giáo viên
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="role" value = "3" <?php if($_GET['role'] == 3){echo "checked=checked";}?>> Ủy quyền Admin
+                </div>
+                
+                <!--Khi nhấn nút cancel thì đóng form đăng ký lại-->
+            <div class="clearfix">
+                
+                <button type="submit" class= "btnOnClick btn btn-primary btn-lg btn-block">Update</button>
+                
+            </div>
+                
     
+            </div>
+        </form>
+    </div>
     
   </body>
 </html>

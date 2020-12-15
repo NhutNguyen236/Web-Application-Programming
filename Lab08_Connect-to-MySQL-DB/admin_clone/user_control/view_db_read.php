@@ -36,7 +36,6 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="add_db.php">Add user <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="update_db.php">Update user</a>
                 <a id = "class_control_nav" class="nav-item nav-link active" href="../class_control/view_class.php">Class Control</a>
             </div>
         </div>
@@ -54,6 +53,7 @@
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Role</th>
+                <th>Admin Action</th>
             </tr>
 
             <?php
@@ -79,6 +79,10 @@
                             echo 'Admin';
                         }
                     ?>
+                </td>
+                <td>
+                    <a href="update_db.php?id=<?php echo $row['user_id'];?> && username=<?php echo $row['username'];?> && password=<?php echo $row['password'];?> && fullname=<?php echo $row['fullname'];?> && birthdate=<?php echo $row['birthdate'];?> && email=<?php echo $row['email'];?> && phone=<?php echo $row['phone'];?> && role=<?php echo $row['role']?>">Update</a>
+                    <a href="delete_db.php?id_delete=<?php echo $row['user_id'];?> && username=<?php echo $row['username'];?>">Delete</a>
                 </td>
             </tr>
 

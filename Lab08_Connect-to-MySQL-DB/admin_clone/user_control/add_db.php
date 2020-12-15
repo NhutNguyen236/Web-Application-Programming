@@ -24,7 +24,7 @@
     
     <!-- Admin options nav bar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-success">
-        <a id="logo" class="navbar-brand" href="#">Admin Panel</a>
+        <a id="logo" class="navbar-brand" href="view_db_read.php">Admin Panel</a>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,8 +32,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="del_db.php">Delete user</a>
-                <a class="nav-item nav-link active" href="update_db.php">Update user</a>
+                
             </div>
         </div>
     </nav>
