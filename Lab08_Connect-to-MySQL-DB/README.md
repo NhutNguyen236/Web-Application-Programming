@@ -37,3 +37,6 @@ This error is usually raised when you change your root localhost phpmyadmin pass
 * Search for this one 
 `$cfg['Servers'][$i]['password']`
 * Then enter your password in the format of `$cfg['Servers'][$i]['password'] = '<your-password>'`
+
+### *Database not selected or things like that when importing a db*
+* To fix it, simply just create a new database with a custom name first then import it and *NEVER* import and override it on an existing db
