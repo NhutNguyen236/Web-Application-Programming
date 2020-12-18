@@ -22,7 +22,7 @@
         VALUES (NULL, '$class_name');";
                 
         if($connection->query($sql) === true){
-            require("class.php");
+            header("class.php");
         }
         else{
             echo "Error: " . $sql . "<br>" . $connection->error;

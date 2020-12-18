@@ -81,7 +81,7 @@
                                 </p>
                                 <p>
                                 <?php echo $row["post_content"] ?>
-                                <a class="btn_deletePosts" href="delete_posts.php?id=<?php echo $row["id"] ?>" class="delete">Delete</a>
+                                <a class="btn_deletePosts" href="delete_post.php?post_id=<?php echo $row["post_id"];?> && class_id=<?php echo $_GET['id'];?>" class="delete">Delete</a>
                                 </p>
                             
                             </div>

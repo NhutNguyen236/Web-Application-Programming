@@ -164,7 +164,7 @@
                         <h5 class="card-title text- dark">
                                 <?php 
                                     if (strlen($row["class_name"]) >= 20) {
-                                        echo substr($row["class_name"], 0, 20). " ... ";
+                                        echo mb_substr($row["class_name"], 0, 15,'UTF-8'). " ... ";
                                     }
                                     else {
                                         echo $row["class_name"];
