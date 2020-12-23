@@ -31,7 +31,7 @@
 
 ## Status
 <p align = "center">
-  *Course finished*
+  Course finished
 </p>  
 
 <p align = "center">
