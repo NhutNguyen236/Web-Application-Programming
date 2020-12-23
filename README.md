@@ -31,7 +31,7 @@
 
 ## Status
 <p align = "center">
-  *Still in updating process*
+  *Course finished*
 </p>  
 
 <p align = "center">
